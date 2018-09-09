@@ -1,0 +1,119 @@
+/*slider*/
+.slider{
+    blockquote{
+        font:{
+            size: 20px;
+            style: italic;
+            weight: bold;
+            family: Arial 
+        }
+        color: $pColor;
+        line-height: 1.7;
+        text-align: center;
+        width:80%;
+        margin: 30px auto;
+    }
+    img{
+        width: 100%;
+        height: 400px ;
+    }
+    .bullets{
+       text-align: center;
+    li{
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        background-color: $geryColor;
+        border-radius: 50%;
+        border: 2px solid $geryColor;
+        cursor: pointer;
+        &.active,
+        &:hover{
+            background-color: white;
+            border: 2px solid #333;      
+             }
+        }
+      }
+}
+
+/*services*/
+.services{
+    .service-box{
+           @media #{$maxMobile}{
+            width:100%;
+        }
+        width: (100%/3);
+        float:$float-left;
+        &:not(:last-of-type){
+            padding-right: 20px;
+        }
+    }
+    .sevices-title{
+        color: #666;
+        i{
+            font-size: 35px;
+            position: relative;
+            top: 4px;
+            padding: 0 10px;
+        }
+    }
+    .sevices-desc{
+        color: $pColor;
+        line-height: 1.6; 
+    }
+    .services-link{
+        color: $redColor;
+        text-decoration: none;
+        margin-top: 20px;
+    }
+}
+/*players*/
+.our-player{
+    .player-box{
+           @media #{$maxMobile}{
+            width:100%;
+        }
+        width: (100%/4);
+        float:$float-left;
+        text-align: center;
+        &:not(:last-of-type){
+            padding-right: 20px;}
+        .player-img{
+            width: 150px;
+        }
+        .player-title{
+            color: #666;
+            font-weight: normal;
+            span{
+                font-weight: bold;
+            }
+        }
+        .player-desc{
+            color: $pColor;
+            line-height: 1.6;     
+        }
+        .player-link{
+            color: $redColor;
+            text-decoration: none;
+            margin-top: 20px;  
+        }
+    }
+}
+/*image*/
+.img{
+    .images-box{
+           @media #{$maxMobile}{
+            width:100%;
+        }
+        float: $float-left;
+        width:(94%/3);
+        text-align: center;
+        &:not(:last-of-type){
+            margin-right: 3%;
+        }
+        
+        .our-image{
+         width: 80%;
+        }  
+    }
+}

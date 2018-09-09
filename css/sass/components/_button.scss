@@ -1,0 +1,14 @@
+.main-button{
+    text-align: center;
+    color: white;
+    background: rgba($redColor,.5);
+    width: 124px;
+    padding: 10px;
+    border-radius: 10px;
+    position: relative;
+    left: 77px;
+    @include prefixer(transition, ease-in-out .5s, moz o webkit);
+    &:hover{
+        background-color: $redColor;
+    }
+}

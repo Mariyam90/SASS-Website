@@ -1,0 +1,94 @@
+.footer{
+    background-color: #e2e2e2;
+    overflow: hidden;
+    padding-top: 50px;
+    margin-top: 50px;
+    .gallery,.contact,.info{
+        float: $float-left;
+        
+    }
+    .gallery{
+        @media #{$maxMobile}{
+            width:100%;
+        }
+        width:50%;
+        .box{
+            
+             img{
+                 float: $float-left;
+                 width: 150px;
+                 margin-bottom: 20px;
+               }
+            .text{
+                float: $float-right;
+                width: 70%;
+                padding: 0 10px;
+                h4{
+          color: #777;  
+        }
+        p{
+          color: $pColor;  
+        }
+            }           
+                        
+
+        }
+    }
+    .info{
+        @media #{$maxMobile}{
+            width:100%;
+        }
+        width:25%;
+        ul{
+            li{
+                color: $pColor;
+                line-height: 1.8;
+                span{color: $redColor;}
+            }
+        }
+        h4{
+          color: #777;  
+        }
+        p{
+          color: $pColor;  
+        }
+    }
+    .contact{
+        @media #{$maxMobile}{
+            width:100%;
+        }
+        width:25%;
+        padding-bottom: 30px;
+        form {
+            input[type="text"],input[type="email"],textarea{
+                width: 80%;
+                margin-bottom: 10px;
+                padding: 10px;
+                border-radius: 10px;
+                outline: none;
+            }
+            textarea{
+                height: 100px;
+            }           
+        }        
+    }
+    .copyright{
+    padding: 15px 0 ;
+    border-top: 1px solid #c5c5c5;
+    color: #888;
+    overflow: hidden;
+    width: 80%;
+    margin: auto;
+    .copytext,.copyauthor{
+        float: $float-left;
+        width:50%;
+    }     
+    .copyauthor{
+        text-align: $text-right;
+    }
+}
+}
+.section-title{
+    color: #777;
+}
+
